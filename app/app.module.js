@@ -9,12 +9,16 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const core_1 = require("@angular/core");
 const platform_browser_1 = require("@angular/platform-browser");
 const events_app_component_1 = require("./events-app.component");
+const events_list_component_1 = require("./events/events-list.component");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
     core_1.NgModule({
         imports: [platform_browser_1.BrowserModule],
-        declarations: [events_app_component_1.EventsAppComponent],
+        declarations: [
+            events_app_component_1.EventsAppComponent,
+            events_list_component_1.EventsListComponent
+        ],
         bootstrap: [events_app_component_1.EventsAppComponent]
     })
 ], AppModule);
