@@ -10,6 +10,7 @@ const core_1 = require("@angular/core");
 const platform_browser_1 = require("@angular/platform-browser");
 const events_app_component_1 = require("./events-app.component");
 const events_list_component_1 = require("./events/events-list.component");
+const events_thumbnail_component_1 = require("./events/events-thumbnail.component");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
@@ -17,7 +18,8 @@ AppModule = __decorate([
         imports: [platform_browser_1.BrowserModule],
         declarations: [
             events_app_component_1.EventsAppComponent,
-            events_list_component_1.EventsListComponent
+            events_list_component_1.EventsListComponent,
+            events_thumbnail_component_1.EventsThumbnailComponent
         ],
         bootstrap: [events_app_component_1.EventsAppComponent]
     })
